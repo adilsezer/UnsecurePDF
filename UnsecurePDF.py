@@ -13,5 +13,3 @@ for filename in os.listdir(dirpath):
         with pikepdf.open(dirpath + "/Old-" + filename) as pdf:
             pdf.save(dirpath + "/" + filename)
         os.remove(dirpath + "/Old-" + filename)
-
-print("Done!")
